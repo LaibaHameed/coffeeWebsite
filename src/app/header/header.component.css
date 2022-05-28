@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 999;
     background: white;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     padding: 1.4rem 9%;
@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-@media(max-width:800px){
+@media(max-width:830px){
 
     #menu-btn{
         display: initial;
@@ -196,5 +196,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 2.2rem;
         margin:0;
         padding:1.5rem 2rem;
+    }
+
+    .header{
+    padding: 1.4rem 4%;
     }
 }
