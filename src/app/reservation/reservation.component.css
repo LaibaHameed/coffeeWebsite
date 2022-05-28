@@ -7,8 +7,9 @@
     margin: 8rem 0rem 0rem 12rem;
     font-family: 'Koulen';
     font-size: 4rem;
-    letter-spacing: .2rem;
-    /* color: ; */
+    letter-spacing: .12rem;
+    font-weight: 400;
+    color: var(--main-color);
 }
 
 .hr{
@@ -54,7 +55,7 @@ input::placeholder{
     color: var(--second-color);
 }
 
-input:focus{
+.form-div > input:focus{
     border: 2px solid rgb(201, 197, 189);
     transition: all 0s linear;
 }

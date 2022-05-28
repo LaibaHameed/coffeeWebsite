@@ -2,10 +2,12 @@
 
 .home {
     min-height: 800px;
-    padding-top: 12rem;
     background: url(../../assets/imgs/home-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 2rem 9%;
+    padding-top: 12rem;
+
 }
 
 .home .row {
@@ -75,9 +77,7 @@
 /* second section style  */
 
 
-section {
-    padding: 2rem 9%;
-}
+
 
 .book-table {
     background-color: rgba(234, 231, 222, 0.884);
@@ -303,6 +303,8 @@ input[button]{
      display: flex;
      align-items: center;
      justify-content: center;
+     margin-right: 0%;
+     margin-left: 0%;
  }
 
 .main-box{
@@ -317,7 +319,7 @@ input[button]{
 }
 
 .box1{
-    width: 45%;
+    width: 50%;
     position: relative;
     text-align: left;
     color: rgba(255, 255, 255, 0.945);
@@ -372,24 +374,29 @@ input[button]{
 }
 
 .box2{
-    width: 45%; 
+    width: 50%; 
 }
 
 .box2 > img{
     width: 100%;
 }
 
+
+
 /* home gallery section  */
 
 .gallery{
-    margin: 10rem 2rem;
+    /* margin: 10rem 2rem; */
+    margin: 0%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .grid-container{
     width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50% 50%; 
     gap: 0%;
 }
 
@@ -555,19 +562,12 @@ input[button]{
         gap: 5rem;
     } 
 
-    .main-box{
-        flex-direction: column;
-    }
-
-    .box1, .box2{
-        width: 60%;
-    }
-
     }
 
     @media(max-width:1080px) and (min-width:768px){
         .box1 h1{
-            font-size: 3.4rem;
+            font-size: 3.1rem;
+           min-width: 65%;
         }
 
         .box p{
@@ -653,9 +653,65 @@ input[button]{
         width: 100%;
     }
     
-    .box1, .box2{
-        width: 70%;
+}
+
+
+@media (max-width:768px) {
+
+    .main-box{
+        flex-direction: column;
     }
+
+    .box1, .box2{
+        width: 100%;
+    }
+
+    .box1 > h1{
+        font-size: 3.6rem;
+    }
+    
+    .box1 > p{
+        font-size: 1.7rem;
+    }
+
+    .grid-container{
+        grid-template-columns: 50% 50%;
+        grid-template-rows:20% 20% 20% 20% 20% ;
+    }
+
+    .grid-container > .img-1{
+        width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .grid-container > .img-2{
+        width: 100%;
+        grid-column: 1 /2;
+        grid-row: 2 / 3;
+    } 
+    
+    .grid-container > .img-3{
+        width: 100%;
+        grid-column: 2 /3;
+        grid-row: 2 / 3;
+    }
+    .grid-container > .img-4{
+        width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    .grid-container > .img-5{
+        width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    .grid-container > .img-6{
+        width: 100%;
+        grid-column:1 / 2;
+        grid-row: 3 / 5;
+    }
+    
 }
 
 @media (max-width:624px){
@@ -667,13 +723,18 @@ input[button]{
         margin: 4rem;
     }
 
-    .box1, .box2{
-        width: 80%;
-    }
-
     .box1 h1{
         width: 100%;
     }
+
+    .box1 > h1{
+        font-size: 3.4rem;
+    }
+    
+    .box1 > p{
+        font-size: 1.4rem;
+    }
+
 }
 
 
@@ -684,5 +745,15 @@ input[button]{
 
     .container {
         margin: 2rem;
+    }
+
+    .box1 > p{
+        visibility: hidden;
+        opacity: 0%;
+    }
+
+    .grid-container{
+        width: 100%;
+        display: block;
     }
 }

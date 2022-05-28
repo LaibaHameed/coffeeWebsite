@@ -42,7 +42,8 @@
  }
 
 .return{
-    margin: 0rem 14rem 0rem;
+    margin: 0rem 14rem 12rem;
+    /* margin-bottom: 12rem; */
 }
  .return > a{
      font-size: 1.6rem;
@@ -50,8 +51,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--second-color);
  }
-
-
 
 
 
