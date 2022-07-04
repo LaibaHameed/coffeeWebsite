@@ -196,10 +196,19 @@
   .list-boxs .card {
     width: 45%;
   }
+
+
 }
 
 @media screen and (max-width: 550px) {
+
   .list-boxs .card {
     width: 95%;
   }
+
+  .section-prices {
+    margin: 3rem;
+  }
+
 }
+

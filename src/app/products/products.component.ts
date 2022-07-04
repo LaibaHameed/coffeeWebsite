@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from '../shared/services/data-service.service';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  // * 5th Step
+  ProductsDataArray:any = [];
+
+  constructor(
+  // * 4th Step
+    private _DataService: DataServiceService
+  ) { }
 
   ngOnInit(): void {
+    // * 7th Step
+    this.GetDataFromServiceFile();
+  }
+
+  // * 6th Step
+  GetDataFromServiceFile(){
+    this.ProductsDataArray = this._DataService.GetProductData();
   }
 
 }
