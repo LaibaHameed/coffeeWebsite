@@ -32,7 +32,8 @@
             ],
             "scripts": [
               "node_modules/@fortawesome/fontawesome-free/js/all.js",
-              "src/index.js"
+              "src/index.js",
+              "C:/Users/DELL/Desktop/Angular-website/coffee-website/src/index.js"
             ]
           },
           "configurations": {

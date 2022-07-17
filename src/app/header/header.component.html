@@ -1,42 +1,38 @@
 
 
-
 <header class="header">
 
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-    <a href="#" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
+    <a href="home.html" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
 
     <nav class="navbar">
-        <ul class="nav">
-            <li class="nav-item"><a routerLink="/home" >Home</a></li>
-            <li class="nav-item"><a routerLink="/menu" >Menu</a></li>
-            <li class="nav-item"><a routerLink="/reservation" >Reservation</a></li>
-            <li class="nav-item"><a href="#">Pages</a>
-                <ul class="sub-nav">
-                    <li class="nav-item"><a routerLink="/gallery" >Gallery</a></li>
-                    <li class="nav-item"><a routerLink="/about-us" >About Me </a></li>
-                    <li class="nav-item"><a routerLink="/contact-us">Contact Us</a></li>
+        <ul>
+            <li><a routerLink="/home">home</a></li>
+            <li><a routerLink="/menu">Menu</a></li>
+            <li><a routerLink="/reservation">Reservation</a></li>
+            <li><a href="#">pages </a>
+                <ul>
+                    <li><a routerLink="/gallery">Gallery</a></li>
+                    <li><a routerLink="/about-us">About Us</a></li>
+                    <li><a routerLink="/contact-us">Contact Us</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="#">Shop</a>
-                <ul class="sub-nav">
-                    <li class="nav-item"><a routerLink="/products" >Products</a></li>
-                    <li class="nav-item"><a routerLink="/cart" >Cart</a></li>
-                    <li class="nav-item"><a routerLink="/check-out" >Check Out</a></li>
-                    <li class="nav-item"><a>My Account</a></li>
+            <li><a href="#">Shop </a>
+                <ul>
+                    <li><a routerLink="/products">Products</a></li>
+                    <li><a routerLink="/cart">Cart</a></li>
+                    <li><a routerLink="/check-out">Check Out</a></li>
+                    <li><a routerLink="/">My Account</a></li>
+
                 </ul>
             </li>
         </ul>
     </nav>
-    <div class="buttons">
-        <a class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
-    <a routerLink="/sign-up" class="btn">Join Us</a>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a routerLink="/cart" class="fas fa-shopping-cart"></a>
+        <a routerLink="/sign-up" class="btn">Join Us</a>
+
     </div>
 
 </header>
-
-
-
-
-<script src="../header/index.js"></script>
